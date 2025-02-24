@@ -56,7 +56,7 @@ Multiplication returns IntExpression:
 
 PrimaryExpression returns IntExpression:
 	IntLiteral |
-	VariableReference |
+	IntVarExpression |
 	'(' Addition ')'
 ;
 
@@ -64,7 +64,7 @@ IntLiteral:
     val = INT
 ;
 
-VariableReference:
+IntVarExpression:
     var = [VariableDeclaration]
 ;
 
